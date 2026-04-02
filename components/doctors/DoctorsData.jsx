@@ -1,0 +1,38 @@
+export const doctors = [
+  {
+    id: 1,
+    name: "Dr. Sarah Mitchell",
+    specialization: "General Dentistry",
+    bio: "Over 15 years of experience in general and family dentistry. Passionate about preventive care.",
+    rating: 4.9,
+    reviews: 234,
+    experience: 15,
+  },
+  {
+    id: 2,
+    name: "Dr. James Chen",
+    specialization: "Orthodontics",
+    bio: "Specializes in Invisalign and braces. Known for creating beautiful smiles.",
+    rating: 4.8,
+    reviews: 189,
+    experience: 12,
+  },
+  {
+    id: 3,
+    name: "Dr. Emily Rodriguez",
+    specialization: "Cosmetic Dentistry",
+    bio: "Expert in veneers, whitening, and smile makeovers.",
+    rating: 4.9,
+    reviews: 312,
+    experience: 10,
+  },
+  {
+    id: 4,
+    name: "Dr. Michael Park",
+    specialization: "Oral Surgery",
+    bio: "Specialized in implants, wisdom teeth, and jaw surgery.",
+    rating: 4.7,
+    reviews: 156,
+    experience: 18,
+  },
+];
