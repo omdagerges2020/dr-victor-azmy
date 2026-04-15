@@ -51,9 +51,9 @@ export default function Navbar() {
           })}
         </div>
 
-        {/* 🟦 Right */}
+        {/* Right */}
         <div className="flex items-center gap-3">
-          {/* 🌙 Theme */}
+          {/* Theme */}
           <button className="p-2 rounded-full hover:bg-gray-100">
             <Moon size={20} />
           </button>
@@ -67,14 +67,14 @@ export default function Navbar() {
             Sign In
           </Button>
 
-          {/* 🍔 Mobile Menu Button */}
+          {/* Mobile Menu Button */}
           <button className="md:hidden" onClick={() => setOpen(!open)}>
             {open ? <X /> : <Menu />}
           </button>
         </div>
       </div>
 
-      {/* 📱 Mobile Menu */}
+      {/* Mobile Menu */}
       {open && (
         <div className="md:hidden px-6 pb-4">
           <div className="flex flex-col gap-3 bg-gray-100  p-4 rounded-xl">
