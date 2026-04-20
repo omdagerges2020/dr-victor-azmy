@@ -5,34 +5,31 @@ import { Moon, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import LanguageSwitcher from "@/components/language-switcher";
+import { useTranslations } from "next-intl";
 
 const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "Services", href: "/services" },
-  { name: "Doctors", href: "/doctors" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "home", href: "/" },
+  { name: "services", href: "/services" },
+  { name: "doctors", href: "/doctors" },
+  { name: "about", href: "/about" },
+  { name: "contact", href: "/contact" },
 ];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const t = useTranslations("NavBar");
 
   return (
     <nav className="w-full border-b bg-white  sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between py-2 px-6">
         {/*  Logo */}
         <div className="flex items-center gap-2">
-          <div className="w-16 h-16 rounded-full overflow-hidden flex items-center p-1 justify-center">
-            <Image
-              src="/images/logo.jpg"
-              alt="dr-victor logo"
-              width={64}
-              height={64}
-              className="object-cover scale-[1.7]"
-            />
+          <div className="w-[2rem] h-[2rem] rounded-xl bg-gradient-to-r from-[#164DA0] to-[#2669B6] overflow-hidden flex items-center p-1 justify-center">
+            <span className="font-bold text-white">V</span>
           </div>
           <span className="text-lg font-bold text-gray-900 dark:text-white">
-            Dental Clinic
+            {t('logo')}
           </span>
         </div>
 
@@ -45,7 +42,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`px-4 py-1.5 rounded-full font-semibold text-md transition text-[#6A6E75] hover:text-[#2A6FBB] hover:bg-slate-300`}
               >
-                {link.name}
+                 {t(link.name)}
               </Link>
             );
           })}
@@ -53,6 +50,8 @@ export default function Navbar() {
 
         {/* Right */}
         <div className="flex items-center gap-3">
+          <LanguageSwitcher />
+
           {/* Theme */}
           <button className="p-2 rounded-full hover:bg-gray-100">
             <Moon size={20} />
@@ -64,7 +63,7 @@ export default function Navbar() {
             size="navbar"
             className="hidden md:flex rounded-full px-6"
           >
-            Sign In
+            {t('signinbtn')}
           </Button>
 
           {/* Mobile Menu Button */}
