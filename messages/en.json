@@ -1,0 +1,33 @@
+{
+  "NavBar": {
+    "logo": "Dr.Victor Azmy",
+    "signinbtn": "sign in",
+    "home": "Home",
+    "services": "Services",
+    "doctors": "Doctors",
+    "about": "About",
+    "contact": "Contact",
+    "signin": "Sign In"
+  },
+  "HomePage": {
+    "badgetitle": "Trusted by 15,000+ patients",
+    "title": "Your Smile Deserves",
+    "spantitle1": "Expert",
+    "spantitle2": "Care",
+    "description": "Experience modern dentistry with compassionate professionals. From routine cleanings to advanced procedures, we're here to give you a healthy, beautiful smile.",
+    "bookappointementbtn": "Book Appointment",
+    "callusbtn": "Call Us",
+    "happypatients": "Happy Patients",
+    "yearsexperience": "Years Experience",
+    "treatments": "treatments",
+    "emergencycare": "Emergency Care",
+    "ourservicestitle": "Our Services",
+    "servicesbio": "Comprehensive dental solutions tailored to your needs.",
+    "viewallservicesbtn": "View All Services",
+    "ourdoctorstitle": "Meet Our Doctors",
+    "doctorsbio": "Experienced professionals dedicated to your oral health.",
+    "ctaheading": "Ready to Transform Your Smile?",
+    "ctadescription": "Book your appointment today and take the first step towards a healthier, more confident smile.",
+    "ctabtn": "Book Now"
+  }
+}

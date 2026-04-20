@@ -1,7 +1,10 @@
+import { useTranslations } from "next-intl";
 import DoctorCard from "./DoctorCard";
 import { doctors } from "./DoctorsData";
 
 export default function DoctorsSection() {
+  const t = useTranslations("HomePage");
+
   return (
     <section className=" bg-muted/30">
       <div className="container mx-auto px-4">
@@ -9,11 +12,11 @@ export default function DoctorsSection() {
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Meet Our Doctors
+            {t('ourdoctorstitle')}
           </h2>
 
           <p className="text-muted-foreground mt-3">
-            Experienced professionals dedicated to your oral health.
+            {t('doctorsbio')}
           </p>
         </div>
 
