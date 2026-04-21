@@ -1,5 +1,5 @@
 {
-  "NavBar": {
+  "navbar": {
     "logo": "دكتور فيكتور عزمى",
     "signinbtn": "تسجيل الدخول",
     "home": "الرئيسية",
@@ -9,7 +9,7 @@
     "contact": "تواصل",
     "signin": "تسجيل الدخول"
   },
-  "HomePage": {
+  "homepage": {
     "badgetitle": "يثق به أكثر من 15000 مريض",
     "title": "ابتسامتك تستحق",
     "spantitle1": "خبير",

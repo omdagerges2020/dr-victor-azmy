@@ -2,7 +2,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/footer/Footer";
-
+import "@/i18n";
+import I18nProvider from "@/lib/providers/I18nProvider";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,16 +22,25 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-
   return (
     <html
       className={`${geistSans.variable} ${geistMono.variable}`}
       suppressHydrationWarning
+      lang="ar"
     >
       <body>
-          <Navbar />
-          {children}
-          <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <I18nProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </I18nProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -4,17 +4,21 @@ import Link from "next/link";
 import { Moon, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../language-switcher";
+import { ModeToggle } from "../ModeToggle";
 
 const navLinks = [
-  { name: "home", href: "/" },
-  { name: "services", href: "/services" },
-  { name: "doctors", href: "/doctors" },
-  { name: "about", href: "/about" },
-  { name: "contact", href: "/contact" },
+  { name: "navbar.home", href: "/" },
+  { name: "navbar.services", href: "/services" },
+  { name: "navbar.doctors", href: "/doctors" },
+  { name: "navbar.about", href: "/about" },
+  { name: "navbar.contact", href: "/contact" },
 ];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <nav className="w-full border-b bg-white  sticky top-0 z-50">
@@ -25,7 +29,7 @@ export default function Navbar() {
             <span className="font-bold text-white">V</span>
           </div>
           <span className="text-lg font-bold text-gray-900 dark:text-white">
-            clinic
+            {t("navbar.logo")}
           </span>
         </div>
 
@@ -38,7 +42,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`px-4 py-1.5 rounded-full font-semibold text-md transition text-[#6A6E75] hover:text-[#2A6FBB] hover:bg-slate-300`}
               >
-                {link.name}
+                {t(link.name)}
               </Link>
             );
           })}
@@ -46,10 +50,13 @@ export default function Navbar() {
 
         {/* Right */}
         <div className="flex items-center gap-3">
+          <LanguageSwitcher />
+
           {/* Theme */}
-          <button className="p-2 rounded-full hover:bg-gray-100">
+          {/* <button className="p-2 rounded-full hover:bg-gray-100">
             <Moon size={20} />
-          </button>
+          </button> */}
+          <ModeToggle/>
 
           {/* Sign In */}
           <Button
@@ -57,7 +64,7 @@ export default function Navbar() {
             size="navbar"
             className="hidden md:flex rounded-full px-6"
           >
-            sign in
+            {t('navbar.signin')}
           </Button>
 
           {/* Mobile Menu Button */}
@@ -80,12 +87,12 @@ export default function Navbar() {
                   className={`px-4 py-2 rounded-lg text-sm transition text-gray-600 
                   `}
                 >
-                  {link.name}
+                  {t(link.name)}
                 </Link>
               );
             })}
 
-            <Button className="rounded-full mt-2">Sign In</Button>
+            <Button className="rounded-full mt-2">{t('navbar.signin')}</Button>
           </div>
         </div>
       )}

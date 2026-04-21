@@ -9,6 +9,7 @@ import {
   Clock,
   Phone,
 } from "lucide-react";
+import T from "../translate/T";
 
 
 export default async function HeroSection() {
@@ -19,7 +20,7 @@ export default async function HeroSection() {
         {/* Badge */}
         <div className="flex items-center gap-2 bg-white px-4 py-1.5 rounded-full font-semibold text-md text-[#6A6E75] mb-6">
           <CheckCircle className="text-green-500" size={16} />
-          <span>badgetitle</span>
+          <span><T k="homepage.badgetitle"/></span>
         </div>
 
         {/* Heading */}
