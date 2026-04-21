@@ -4,9 +4,6 @@ import Link from "next/link";
 import { Moon, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import LanguageSwitcher from "@/components/language-switcher";
-import { useTranslations } from "next-intl";
 
 const navLinks = [
   { name: "home", href: "/" },
@@ -18,7 +15,6 @@ const navLinks = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const t = useTranslations("NavBar");
 
   return (
     <nav className="w-full border-b bg-white  sticky top-0 z-50">
@@ -29,7 +25,7 @@ export default function Navbar() {
             <span className="font-bold text-white">V</span>
           </div>
           <span className="text-lg font-bold text-gray-900 dark:text-white">
-            {t('logo')}
+            clinic
           </span>
         </div>
 
@@ -42,7 +38,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`px-4 py-1.5 rounded-full font-semibold text-md transition text-[#6A6E75] hover:text-[#2A6FBB] hover:bg-slate-300`}
               >
-                 {t(link.name)}
+                {link.name}
               </Link>
             );
           })}
@@ -50,8 +46,6 @@ export default function Navbar() {
 
         {/* Right */}
         <div className="flex items-center gap-3">
-          <LanguageSwitcher />
-
           {/* Theme */}
           <button className="p-2 rounded-full hover:bg-gray-100">
             <Moon size={20} />
@@ -63,7 +57,7 @@ export default function Navbar() {
             size="navbar"
             className="hidden md:flex rounded-full px-6"
           >
-            {t('signinbtn')}
+            sign in
           </Button>
 
           {/* Mobile Menu Button */}

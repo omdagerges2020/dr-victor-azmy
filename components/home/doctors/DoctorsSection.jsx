@@ -1,9 +1,7 @@
-import { useTranslations } from "next-intl";
 import DoctorCard from "./DoctorCard";
 import { doctors } from "./DoctorsData";
 
 export default function DoctorsSection() {
-  const t = useTranslations("HomePage");
 
   return (
     <section className=" bg-muted/30">
@@ -12,11 +10,11 @@ export default function DoctorsSection() {
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            {t('ourdoctorstitle')}
+            our doctors title
           </h2>
 
           <p className="text-muted-foreground mt-3">
-            {t('doctorsbio')}
+            doctors bio
           </p>
         </div>
 
