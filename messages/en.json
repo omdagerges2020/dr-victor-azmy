@@ -1,5 +1,5 @@
 {
-  "NavBar": {
+  "navbar": {
     "logo": "Dr.Victor Azmy",
     "signinbtn": "sign in",
     "home": "Home",
@@ -9,7 +9,7 @@
     "contact": "Contact",
     "signin": "Sign In"
   },
-  "HomePage": {
+  "homepage": {
     "badgetitle": "Trusted by 15,000+ patients",
     "title": "Your Smile Deserves",
     "spantitle1": "Expert",
