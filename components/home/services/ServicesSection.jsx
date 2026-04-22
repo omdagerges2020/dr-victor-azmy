@@ -2,25 +2,25 @@ import ServiceCard from "./ServiceCard";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Servicesdata } from "./Servicesdata";
+import T from "@/components/translate/T";
 
 export default async function ServicesSection() {
-
-
-
   return (
-    <section className="pb-16 bg-background">
+    <section className="pb-16 bg-[hsl(var(--section-bg-primary))]">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-           our services title
+            <T k="homepage.ourservicestitle" />
           </h2>
 
-          <p className="text-muted-foreground mt-3">services bio</p>
+          <p className="text-muted-foreground mt-3">
+            <T k="homepage.servicesbio" />
+          </p>
         </div>
 
         {/* cards */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 bg-[#F9FAFB]">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {Servicesdata.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}
@@ -33,7 +33,7 @@ export default async function ServicesSection() {
             size="ourservices"
             className="gap-3"
           >
-         view all services
+            <T k="homepage.viewallservicesbtn" />
             <ArrowRight className="w-4 h-4" />
           </Button>
         </div>

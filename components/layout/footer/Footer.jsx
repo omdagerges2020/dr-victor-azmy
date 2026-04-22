@@ -4,8 +4,8 @@ import { footerData } from "./FooterData";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FFFFFF] border-t">
-      <div className="py-12 container mx-auto px-5">
+    <footer className="bg-[hsl(var(--footer-bg))] text-[hsl(var(--footer-text))] border-t  border-[hsl(var(--hero-badge-border))]">
+      <div className="py-12 container mx-auto px-6">
         {/* GRID */}
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           
@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-r from-[#154B9E] to-[#2262B0] text-white font-bold">
-                D
+                V
               </div>
               <span className="text-xl font-bold">
                 {footerData.brand.name}
@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
 
         {/* BOTTOM */}
-        <div className="mt-10 border-t pt-6 text-center text-sm text-muted-foreground">
+        <div className="mt-10 border-t border-[hsl(var(--hero-badge-border))] pt-6 text-center text-sm text-muted-foreground">
           © {new Date().getFullYear()} DentaCare. All rights reserved.
         </div>
       </div>

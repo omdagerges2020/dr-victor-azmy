@@ -7,7 +7,7 @@ export default function ServicesSection({ title, services }) {
       {/* Title + line */}
       <div className="flex items-center gap-2">
         <div className="h-[4.6px] w-[2rem] bg-gradient-to-r from-[#154B9E] to-[#2262B0] rounded-lg" />
-        <h2 className="font-semibold text-2xl">{title}</h2>
+        <h2 className="font-semibold text-3xl">{title}</h2>
       </div>
 
       {/* Cards */}

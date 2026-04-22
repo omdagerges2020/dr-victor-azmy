@@ -11,13 +11,13 @@ export default function ServiceCard({
   return (
     <Card
       className={cn(
-        "group border border-border/60 bg-card transition-all duration-300",
+        "group border border-border/60 bg-[hsl(var(--service-card-bg))] transition-all duration-300",
         "hover:shadow-lg"
       )}
     >
       <CardContent className=" flex flex-col gap-4">
         {/* Icon */}
-        <div className="w-12 h-12 rounded-lg bg-[#E5EAF4] hover:text-white hover:bg-gradient-to-r from-[#154B9E] to-[#2262B0] flex items-center justify-center">
+        <div className="w-12 h-12 rounded-lg bg-[hsl(var(--service-icon-bg))] hover:text-white hover:bg-gradient-to-r from-[#154B9E] to-[#2262B0] flex items-center justify-center">
           <Icon className="w-5 h-5 text-primary hover:text-white" />
         </div>
 
