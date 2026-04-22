@@ -29,5 +29,13 @@
     "ctaheading": "Ready to Transform Your Smile?",
     "ctadescription": "Book your appointment today and take the first step towards a healthier, more confident smile.",
     "ctabtn": "Book Now"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "We offer a comprehensive range of dental services to meet all your oral health needs."
+  },
+  "doctors": {
+    "title": "Our Doctors",
+    "description": "Meet our team of experienced dental professionals committed to providing exceptional care."
   }
 }

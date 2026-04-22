@@ -1,6 +1,5 @@
 import {
   Sparkles,
-  Smile,
   Shield,
   Heart,
   Star,

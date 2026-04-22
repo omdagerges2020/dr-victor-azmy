@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../language-switcher";
 import { ModeToggle } from "../ModeToggle";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { name: "navbar.home", href: "/" },
@@ -20,8 +21,17 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
 
+  const pathname = usePathname();
+
+  const isActive = (path) => {
+    if (path === "/") {
+      return pathname === "/";
+    }
+    return pathname.startsWith(path);
+  };
+
   return (
-    <nav className="w-full border-b bg-white  sticky top-0 z-50">
+    <nav className="w-full border-b border-[hsl(var(--navbar-border))] bg-[hsl(var(--navbar))]  sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between py-2 px-6">
         {/*  Logo */}
         <div className="flex items-center gap-2">
@@ -36,11 +46,16 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-1 px-4 py-2 rounded-full">
           {navLinks.map((link) => {
+            const active = isActive(link.href);
             return (
               <Link
                 key={link.name}
                 href={link.href}
-                className={`px-4 py-1.5 rounded-full font-semibold text-md transition text-[#6A6E75] hover:text-[#2A6FBB] hover:bg-slate-300`}
+                className={`px-4 py-1.5 rounded-lg font-semibold text-md transition-colors duration-200 ${
+                  active
+                    ? "bg-[hsl(var(--nav-active-bg))] text-[hsl(var(--nav-active-text))]"
+                    : "text-[hsl(var(--nav-link))] hover:text-[hsl(var(--nav-link-hover))] hover:bg-[#1B2232]"
+                }`}
               >
                 {t(link.name)}
               </Link>
@@ -56,7 +71,7 @@ export default function Navbar() {
           {/* <button className="p-2 rounded-full hover:bg-gray-100">
             <Moon size={20} />
           </button> */}
-          <ModeToggle/>
+          <ModeToggle />
 
           {/* Sign In */}
           <Button
@@ -64,7 +79,7 @@ export default function Navbar() {
             size="navbar"
             className="hidden md:flex rounded-full px-6"
           >
-            {t('navbar.signin')}
+            {t("navbar.signin")}
           </Button>
 
           {/* Mobile Menu Button */}
@@ -92,7 +107,7 @@ export default function Navbar() {
               );
             })}
 
-            <Button className="rounded-full mt-2">{t('navbar.signin')}</Button>
+            <Button className="rounded-full mt-2">{t("navbar.signin")}</Button>
           </div>
         </div>
       )}

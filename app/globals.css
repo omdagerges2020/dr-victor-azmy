@@ -15,8 +15,43 @@
 
 @layer base {
   :root {
+    /* Section Backgrounds */
+    --section-bg-primary: 210 20% 98%; /* #F9FAFB */
+    --section-bg-secondary: 0 0% 100%;
+
+    /* services card */
+    --service-card-bg: 0 0% 100%;
+    --service-icon-bg: 220 35% 92%; /* #E5EAF4 */
+
+    /* Navbar */
+    --navbar: 0 0% 100%;
+    --navbar-foreground: 222 47% 11%;
+
+    /* Navbar Border */
+    --navbar-border: 214 32% 90%;
+
+    /* Navbar Links */
+    --nav-link: 222 47% 11%;
+    --nav-link-hover: 0 0% 100%;
+
+    /* Active Link - Light */
+    --nav-active-bg: 220 33% 92%; /* #E5EAF3 */
+    --nav-active-text: 221 82% 31%; /* #0F3E94 */
+
+    /* Hero Section */
+    --hero-badge-bg: 0 0% 100%; /* white */
+    --hero-badge-text: 220 6% 43%; /* #6A6E75 */
+    --hero-badge-border: 220 10% 90%;
+    --hero-bg: 210 20% 96%; /* #F3F5F7 */
+    --stats-bg: 0 0% 100%;
+    --stats-text: 222 47% 8%;
+
+    /* footer */
+    --footer-bg: 0 0% 100%;
+    --footer-text: 222 47% 8%; /* #121721 */
+
     /* Background & Text */
-    --background: 210 20% 96%;   /* #F2F5F8 */
+    --background: 210 20% 96%; /* #F2F5F8 */
     --foreground: 222 47% 11%;
 
     /* Card */
@@ -28,7 +63,7 @@
     --popover-foreground: 222 47% 11%;
 
     /* Primary (Brand Color) */
-    --primary: 221 80% 32%;       /* #0B3C91 */
+    --primary: 221 80% 32%; /* #0B3C91 */
     --primary-foreground: 210 40% 98%;
 
     /* Secondary */
@@ -40,7 +75,7 @@
     --muted-foreground: 215 16% 47%;
 
     /* Accent */
-    --accent: 207 60% 60%;        /* #5FA8D3 */
+    --accent: 207 60% 60%; /* #5FA8D3 */
     --accent-foreground: 222 47% 11%;
 
     /* Borders & Inputs */
@@ -58,6 +93,39 @@
   }
 
   .dark {
+    --section-bg-primary: 220 35% 9%; /* #0C121D */
+    --section-bg-secondary: 224 30% 10%;
+
+    /* services card */
+    --service-card-bg: 225 25% 9%; /* #121721 */
+    --service-icon-bg: 222 45% 12%; /* #10192C */
+
+    /* Navbar */
+    --navbar: 222 38% 9%; /* #101621 */
+    --navbar-foreground: 210 40% 98%;
+
+    --navbar-border: 222 25% 14%;
+
+    /* Navbar Links */
+    --nav-link: 220 7% 45%; /* #6C717B */ /* #262D3C */
+    --nav-link-hover: 0 0% 100%;
+
+    /* Active Link - Dark */
+    --nav-active-bg: 220 38% 12%; /* #10192C */
+    --nav-active-text: 221 85% 31%; /* #0C3B92 */
+
+    /* Hero Section */
+    --hero-badge-bg: 220 25% 8%; /* #121721 */
+    --hero-badge-text: 220 6% 43%; /* #6A6E75 */
+    --hero-badge-border: 220 20% 18%;
+    --hero-bg: 220 38% 8%; /* #0C1421 */
+    --stats-bg: 225 25% 9%; /* تقريب لـ #121721 */
+    --stats-text: 210 20% 98%; /* تقريب لـ #F9FAFB */
+
+    /* footer */
+    --footer-bg: 225 25% 9%; /* #121721 */
+    --footer-text: 210 20% 98%; /* #F9FAFB */
+
     /* Background & Text */
     --background: 222 47% 8%;
     --foreground: 210 40% 98%;
@@ -71,7 +139,7 @@
     --popover-foreground: 210 40% 98%;
 
     /* Primary (Brand Color) */
-    --primary: 207 70% 55%;      /* lighter blue */
+    --primary: 207 70% 55%; /* lighter blue */
     --primary-foreground: 222 47% 8%;
 
     /* Secondary */

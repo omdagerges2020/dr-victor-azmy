@@ -9,7 +9,7 @@ export default function DoctorCard({
   initials,
 }) {
   return (
-    <Card className="border border-border/60 bg-card transition-all duration-300 hover:shadow-lg">
+    <Card className="border border-border/60 bg-[hsl(var(--service-card-bg))] transition-all duration-300 hover:shadow-lg">
       <CardContent className="flex flex-col items-center text-center gap-3">
 
         {/* Avatar */}

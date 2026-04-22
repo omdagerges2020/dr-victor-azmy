@@ -6,7 +6,7 @@ export default function ServiceCard({
   duration,
 }) {
   return (
-    <div className="bg-card border rounded-xl p-5 cursor-pointer space-y-3 shadow-sm hover:shadow-md transition">
+    <div className="bg-[hsl(var(--service-card-bg))] border border-[hsl(var(--hero-badge-border))] rounded-xl p-5 cursor-pointer space-y-3 shadow-sm hover:shadow-md transition">
       
       {/* Icon */}
       <div className="w-[3rem] h-[3rem] flex items-center justify-center rounded-lg bg-primary/10">

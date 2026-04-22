@@ -26,7 +26,7 @@ const AboutPage = () => {
       <section className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto bg-gradient-to-r from-[#154B9E] to-[#2262B0] rounded-2xl p-12 md:p-20 text-center text-white shadow-xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
-          <p className="text-primary-foreground/90 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             To provide accessible, high-quality dental care in a warm and welcoming 
             environment. We believe every smile tells a story, and we're here to help yours shine.
           </p>

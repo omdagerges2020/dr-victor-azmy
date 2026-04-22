@@ -4,7 +4,6 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/footer/Footer";
 import "@/i18n";
 import I18nProvider from "@/lib/providers/I18nProvider";
-import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,18 +28,11 @@ export default async function RootLayout({ children }) {
       lang="ar"
     >
       <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <I18nProvider>
-            <Navbar />
-            {children}
-            <Footer />
-          </I18nProvider>
-        </ThemeProvider>
+        <I18nProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </I18nProvider>
       </body>
     </html>
   );
