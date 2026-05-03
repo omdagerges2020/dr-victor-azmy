@@ -3,8 +3,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export default async function CtaSection() {
-
-
   return (
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6">
@@ -14,12 +12,12 @@ export default async function CtaSection() {
           <div className="max-w-2xl mx-auto">
             {/* Heading */}
             <h2 className="text-2xl md:text-4xl font-bold text-white">
-              <T k="homepage.ctaheading"/>
+              <T k="homepage.ctaheading" />
             </h2>
 
             {/* Description */}
             <p className="mt-4 text-sm md:text-base text-white/80">
-              <T k="homepage.ctadescription"/>
+              <T k="homepage.ctadescription" />
             </p>
 
             {/* Button */}
@@ -29,8 +27,8 @@ export default async function CtaSection() {
                 size="lg"
                 className="gap-5 px-8 py-6 text-[1.1rem] rounded-full"
               >
-                <T k="homepage.ctabtn"/>
-                <ArrowRight className="w-4 h-4" />
+                <T k="homepage.ctabtn" />
+                <ArrowRight className="transition [html[dir='rtl']_&]:rotate-180" />
               </Button>
             </div>
           </div>

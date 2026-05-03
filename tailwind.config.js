@@ -11,7 +11,13 @@ module.exports = {
   darkMode: ["class"],
   theme: {
     extend: {
-        colors: {
+      backgroundImage: {
+        "btn-primary":
+          "linear-gradient(to left, hsl(var(--btn-primary-from)), hsl(var(--btn-primary-to)))",
+        "btn-disabled":
+          "linear-gradient(to left, hsl(var(--btn-disabled-from)), hsl(var(--btn-disabled-to)))",
+      },
+      colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

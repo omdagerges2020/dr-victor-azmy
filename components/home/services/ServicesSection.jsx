@@ -34,7 +34,7 @@ export default async function ServicesSection() {
             className="gap-3"
           >
             <T k="homepage.viewallservicesbtn" />
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="transition [html[dir='rtl']_&]:rotate-180" />
           </Button>
         </div>
       </div>

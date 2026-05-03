@@ -7,7 +7,7 @@ import {
   Sparkles,
   Clock,
   Phone,
-  ArrowLeft,
+  ArrowRight,
 } from "lucide-react";
 import T from "../translate/T";
 
@@ -52,7 +52,7 @@ export default async function HeroSection() {
             <Link href="/booking">
               <T k="homepage.bookappointementbtn" />{" "}
             </Link>
-            <ArrowLeft />
+            <ArrowRight className="transition [html[dir='rtl']_&]:rotate-180" />
           </Button>
 
           {/* Secondary */}
