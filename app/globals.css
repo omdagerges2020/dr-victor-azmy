@@ -46,6 +46,58 @@
     --stats-bg: 0 0% 100%;
     --stats-text: 222 47% 8%;
 
+    /* booking */
+    --booking-bg: 0 0% 100%;
+    --booking-card-bg: 0 0% 100%;
+    --booking-border: 220 15% 90%;
+    --booking-text: 222 47% 8%;
+    --booking-muted: 215 16% 47%;
+    --btn-disabled-from: 217 39% 66%; /* #85A0CA */
+    --btn-disabled-to: 217 46% 69%; /* #8DADD5 */
+    --btn-primary-from: 217 77% 34%; /* #13479B */
+    --btn-primary-to: 217 67% 40%; /* #2160AE */
+
+    /* date */
+    --date-card-bg: 0 0% 100%;
+    --date-card-border: 220 15% 90%;
+    --date-card-hover: 220 20% 96%;
+    /* Default (not selected) */
+    --date-card-bg: 210 20% 98%; /* #F9FAFB */
+    --date-card-border: 210 20% 98%; /* نفس اللون */
+    /* Selected */
+    --date-card-selected-bg: 220 25% 94%; /* #EDF0F5 */
+    --date-card-selected-border: 217 85% 31%; /* #0C3B92 */
+    --date-card-border: 210 20% 98%; /* #F9FAFB */
+    --date-card-border: 215 16% 90%; /* #C4CBD3 */
+    --btn-back-bg: 210 20% 98%; /* #F9FAFB */
+    --btn-back-hover: 202 58% 60%; /* #5EABD4 */
+
+    /* timestep */
+    --time-slot-border: 215 16% 80%;
+    --time-slot-hover-border: 217 85% 31%;
+    --time-slot-selected-bg: 220 25% 94%;
+    --time-slot-selected-border: 217 85% 31%;
+    --time-slot-disabled-bg: 210 20% 96%;
+    --time-slot-disabled-text: 215 10% 60%;
+
+    /* confirmstep */
+    --confirm-card-bg: 0 0% 100%;
+    --confirm-card-border: 215 16% 92%;
+    --confirm-label-text: 215 25% 50%;
+    --confirm-value-text: 222 47% 11%;
+    --confirm-divider: 214 32% 91%;
+    --confirm-price-text: 217 85% 31%;
+    --btn-confirm-gradient: linear-gradient(to left, #114499, #2567b4);
+    --btn-confirm-text: 0 0% 100%; /* white */
+
+    /* success step */
+    /* Success Section */
+    --success-bg: 0 0% 100%; /* #FFFFFF */
+    /* Success Card */
+    --success-card-bg: 210 20% 96%; /* #F3F5F7 */
+    --success-label: 222 30% 10%; /* #121721 */
+    --success-description: 218 23% 49%; /* #6B7A90 */
+
     /* footer */
     --footer-bg: 0 0% 100%;
     --footer-text: 222 47% 8%; /* #121721 */
@@ -121,6 +173,56 @@
     --hero-bg: 220 38% 8%; /* #0C1421 */
     --stats-bg: 225 25% 9%; /* تقريب لـ #121721 */
     --stats-text: 210 20% 98%; /* تقريب لـ #F9FAFB */
+
+    /* booking */
+    --booking-bg: 224 30% 10%;
+    --booking-card-bg: 225 25% 9%;
+    --booking-border: 222 20% 18%;
+    --booking-text: 210 20% 98%;
+    --booking-muted: 215 20% 65%;
+    --btn-disabled-from: 216 69% 21%; /* #102D5C */
+    --btn-disabled-to: 215 60% 25%; /* #163865 */
+    --btn-primary-from: 217 79% 33%; /* #12469A */
+    --btn-primary-to: 217 68% 40%; /* #2160AF */
+
+    /* date */
+    --date-card-bg: 225 25% 9%;
+    --date-card-border: 222 20% 18%;
+    --date-card-hover: 222 25% 14%;
+    /* Default */
+    --date-card-bg: 220 30% 8%; /* #0C121D */
+    --date-card-border: 220 30% 8%;
+    /* Selected */
+    --date-card-selected-bg: 222 45% 10%; /* #0C1423 */
+    --date-card-selected-border: 217 85% 31%; /* نفس اللون */
+    --date-card-border: 220 30% 8%; /* #0C121D */
+    --date-card-border: 215 16% 90%; /* #C4CBD3 */
+    --btn-back-bg: 220 30% 8%; /* #0C121D */
+    --btn-back-hover: 202 58% 60%;
+
+    /* timestep */
+    --time-slot-border: 215 20% 35%;
+    --time-slot-hover-border: 217 85% 31%;
+    --time-slot-selected-bg: 222 45% 10%;
+    --time-slot-selected-border: 217 85% 31%;
+    --time-slot-disabled-bg: 220 20% 12%;
+    --time-slot-disabled-text: 215 10% 50%;
+
+    /* confirm step */
+    --confirm-card-bg: 224 30% 10%;
+    --confirm-card-border: 215 20% 20%;
+    --confirm-label-text: 215 20% 65%;
+    --confirm-value-text: 210 40% 98%;
+    --confirm-divider: 215 20% 15%;
+    --confirm-price-text: 217 91% 60%;
+    --btn-confirm-gradient: linear-gradient(to left, #114499, #2567b4);
+    --btn-confirm-text: 0 0% 100%; /* white */
+
+    /* success step */
+    --success-bg: 222 30% 10%; /* #121721 */
+    --success-card-bg: 222 35% 15%; /* #1B2232 */
+    --success-label: 210 20% 98%; /* #F9FAFB */
+    --success-description: 219 16% 47%; /* #6C788A */
 
     /* footer */
     --footer-bg: 225 25% 9%; /* #121721 */

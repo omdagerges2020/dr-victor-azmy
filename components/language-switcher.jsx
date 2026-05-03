@@ -9,6 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Button } from "./ui/button";
 
 export default function LanguageSwitcher() {
   const { i18n } = useTranslation();
@@ -17,15 +18,10 @@ export default function LanguageSwitcher() {
     i18n.changeLanguage(lng);
   };
 
-  const currentLang = i18n.language;
-
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger aschild="true">
-          <Globe size={18} />
-          <span className="uppercase text-sm font-medium">
-            {currentLang}
-          </span>
+      <DropdownMenuTrigger render={<Button variant="outline" />}>
+        <Globe className="h-5 w-5" />
       </DropdownMenuTrigger>
 
       <DropdownMenuContent align="end">
