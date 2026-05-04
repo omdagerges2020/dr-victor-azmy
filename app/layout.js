@@ -1,18 +1,21 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Tajawal, Cairo } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/footer/Footer";
 import "@/i18n";
 import I18nProvider from "@/lib/providers/I18nProvider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+
+const tajawal = Tajawal({
+  variable: "--font-ar",
+  subsets: ["arabic"],
+  weight: ["300", "400", "500", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const cairo = Cairo({
+  variable: "--font-en",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
 });
 
 export const metadata = {
@@ -23,9 +26,9 @@ export const metadata = {
 export default async function RootLayout({ children }) {
   return (
     <html
-      className={`${geistSans.variable} ${geistMono.variable}`}
+      className={`${tajawal.variable} ${cairo.variable}`}
       suppressHydrationWarning
-      lang="ar"
+      lang="en"
     >
       <body>
         <I18nProvider>
