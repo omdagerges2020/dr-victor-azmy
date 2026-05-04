@@ -1,18 +1,28 @@
 import { ArrowRight, User } from "lucide-react";
-
-const doctors = [
-  { id: 1, name: "Dr. Ahmed", specialty: "Orthodontist" },
-  { id: 2, name: "Dr. Sara", specialty: "Cosmetic Dentist" },
-];
+import { useTranslation } from "react-i18next";
 
 export default function DoctorStep({ selected, onSelect, onNext, onBack }) {
+  const { t } = useTranslation();
+
+  const doctors = [
+    {
+      id: 1,
+      name: t("booking.doctorStep.doctorAhmed"),
+      specialty: t("booking.doctorStep.doctorAhmedSpecialty"),
+    },
+    {
+      id: 2,
+      name: t("booking.doctorStep.doctorSara"),
+      specialty: t("booking.doctorStep.doctorSaraSpecialty"),
+    },
+  ];
   return (
     <div className="w-full md:w-[90%] lg:w-[70%]">
       {/* select doctor header */}
       <div className="flex items-center gap-2 mb-2">
         <User color="#1924b3" />
         <h3 className="text-lg font-semibold  text-[hsl(var(--booking-text))]">
-          Select a Doctor
+          {t("booking.doctorStep.title")}
         </h3>
       </div>
 
@@ -50,7 +60,7 @@ export default function DoctorStep({ selected, onSelect, onNext, onBack }) {
               : "bg-btn-disabled text-white opacity-90 cursor-not-allowed"
           }`}
         >
-          Next
+          {t("booking.buttons.next")}
           <ArrowRight color="white" size={"16px"} />
         </button>
       </div>

@@ -2,6 +2,7 @@
 
 import { useMemo } from "react";
 import { ArrowLeft, ArrowRight, Clock } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import TimeSlotCard from "./TimeSlotCard ";
 
 const generateTimeSlots = () => {
@@ -22,6 +23,7 @@ const generateTimeSlots = () => {
 };
 
 export default function TimeStep({ selected, onSelect, onNext, onBack }) {
+  const { t } = useTranslation();
   const slots = useMemo(() => generateTimeSlots(), []);  
   const isValid = selected?.label;  
   
@@ -31,7 +33,7 @@ export default function TimeStep({ selected, onSelect, onNext, onBack }) {
       {/* Title */}
       <div className="flex items-center gap-2 text-lg font-semibold">
         <Clock className="w-5 h-5" />
-        <span>Select a Time</span>
+        <span>{t("booking.timeStep.title")}</span>
       </div>
 
       {/* Grid */}
@@ -60,7 +62,7 @@ export default function TimeStep({ selected, onSelect, onNext, onBack }) {
           className={`flex justify-between items-center gap-4 px-4 py-2 rounded-full bg-[hsl(var(--btn-back-bg))] text-[hsl(var(--booking-text))] border border-[hsl(var(--booking-border))] transition-all duration-200 hover:bg-[hsl(var(--btn-back-hover))] hover:text-white hover:border-transparent`}
         >
           <ArrowLeft size={"16px"} />
-          Back
+          {t("booking.buttons.back")}
         </button>
 
         <button
@@ -73,7 +75,7 @@ export default function TimeStep({ selected, onSelect, onNext, onBack }) {
                       : "bg-btn-disabled text-white opacity-90 cursor-not-allowed"
                   }`}
         >
-          Next
+          {t("booking.buttons.next")}
           <ArrowRight color="white" size={"16px"} />
         </button>
       </div>

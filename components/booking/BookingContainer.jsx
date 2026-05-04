@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import BookingStepper from "./BookingStepper";
 import ServiceStep from "./steps/ServiceStep";
 import DoctorStep from "./steps/DoctorStep";
@@ -10,6 +11,7 @@ import ConfirmStep from "./steps/ConfirmStep";
 import SuccessStep from "./steps/SuccessStep";
 
 export default function BookingContainer() {
+  const { t } = useTranslation();
   const [step, setStep] = useState(1);
 
   const [data, setData] = useState({
@@ -32,11 +34,11 @@ export default function BookingContainer() {
         {step !== 6 && (
           <>
             <h2 className="text-3xl font-bold text-center mb-4 text-[hsl(var(--booking-text))]">
-              Book an Appointment
+              {t("booking.title")}
             </h2>
 
             <p className="text-center text-[hsl(var(--booking-muted))] mb-10">
-              Follow the steps below to schedule your visit.
+              {t("booking.subtitle")}
             </p>
 
             <BookingStepper step={step} />

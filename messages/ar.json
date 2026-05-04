@@ -37,5 +37,74 @@
    "doctors": {
     "title": "أطباؤنا",
     "description": "تعرّف على فريقنا من أطباء الأسنان ذوي الخبرة والملتزمين بتقديم رعاية استثنائية."
+  },
+  "booking": {
+    "title": "حجز موعد",
+    "subtitle": "اتبع الخطوات أدناه لجدولة زيارتك.",
+    "steps": {
+      "service": "الخدمة",
+      "doctor": "الطبيب",
+      "date": "التاريخ",
+      "time": "الوقت",
+      "confirm": "تأكيد"
+    },
+    "serviceStep": {
+      "title": "اختر خدمة",
+      "teethCleaning": "تنظيف الأسنان",
+      "teethCleaningPrice": "$120",
+      "teethCleaningDuration": "45 دقيقة",
+      "teethWhitening": "تبييض الأسنان",
+      "teethWhiteningPrice": "$350",
+      "teethWhiteningDuration": "60 دقيقة",
+      "dentalImplants": "زراعة الأسنان",
+      "dentalImplantsPrice": "$2500",
+      "dentalImplantsDuration": "2-3 ساعات",
+      "orthodontics": "تقويم الأسنان",
+      "orthodonticsPrice": "$4500",
+      "orthodonticsDuration": "12-18 شهر",
+      "rootCanal": "علاج العصب",
+      "rootCanalPrice": "$800",
+      "rootCanalDuration": "90 دقيقة",
+      "dentalVeneers": "قشور الأسنان",
+      "dentalVeneersPrice": "$1200",
+      "dentalVeneersDuration": "زيارتين"
+    },
+    "doctorStep": {
+      "title": "اختر طبيب",
+      "doctorAhmed": "د. أحمد",
+      "doctorAhmedSpecialty": "أخصائي تقويم أسنان",
+      "doctorSara": "د. سارة",
+      "doctorSaraSpecialty": "طبيبة أسنان تجميلية"
+    },
+    "dateStep": {
+      "title": "اختر التاريخ"
+    },
+    "timeStep": {
+      "title": "اختر الوقت"
+    },
+    "confirmStep": {
+      "title": "تأكيد موعدك",
+      "service": "الخدمة",
+      "doctor": "الطبيب",
+      "date": "التاريخ",
+      "time": "الوقت",
+      "total": "الإجمالي",
+      "confirmButton": "تأكيد الحجز"
+    },
+    "successStep": {
+      "title": "تم تأكيد الحجز",
+      "description": "تم حجز موعدك بنجاح.",
+      "service": "الخدمة",
+      "doctor": "الطبيب",
+      "date": "التاريخ",
+      "time": "الوقت",
+      "price": "السعر",
+      "backToHome": "العودة إلى الصفحة الرئيسية"
+    },
+    "buttons": {
+      "next": "التالي",
+      "back": "السابق",
+      "confirm": "تأكيد الحجز"
+    }
   }
 }
