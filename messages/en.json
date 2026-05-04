@@ -37,5 +37,74 @@
   "doctors": {
     "title": "Our Doctors",
     "description": "Meet our team of experienced dental professionals committed to providing exceptional care."
+  },
+  "booking": {
+    "title": "Book an Appointment",
+    "subtitle": "Follow the steps below to schedule your visit.",
+    "steps": {
+      "service": "Service",
+      "doctor": "Doctor",
+      "date": "Date",
+      "time": "Time",
+      "confirm": "Confirm"
+    },
+    "serviceStep": {
+      "title": "Select a Service",
+      "teethCleaning": "Teeth Cleaning",
+      "teethCleaningPrice": "$120",
+      "teethCleaningDuration": "45 min",
+      "teethWhitening": "Teeth Whitening",
+      "teethWhiteningPrice": "$350",
+      "teethWhiteningDuration": "60 min",
+      "dentalImplants": "Dental Implants",
+      "dentalImplantsPrice": "$2500",
+      "dentalImplantsDuration": "2-3 hours",
+      "orthodontics": "Orthodontics",
+      "orthodonticsPrice": "$4500",
+      "orthodonticsDuration": "12-18 months",
+      "rootCanal": "Root Canal",
+      "rootCanalPrice": "$800",
+      "rootCanalDuration": "90 min",
+      "dentalVeneers": "Dental Veneers",
+      "dentalVeneersPrice": "$1200",
+      "dentalVeneersDuration": "2 visits"
+    },
+    "doctorStep": {
+      "title": "Select a Doctor",
+      "doctorAhmed": "Dr. Ahmed",
+      "doctorAhmedSpecialty": "Orthodontist",
+      "doctorSara": "Dr. Sara",
+      "doctorSaraSpecialty": "Cosmetic Dentist"
+    },
+    "dateStep": {
+      "title": "Select a Date"
+    },
+    "timeStep": {
+      "title": "Select a Time"
+    },
+    "confirmStep": {
+      "title": "Confirm Your Appointment",
+      "service": "Service",
+      "doctor": "Doctor",
+      "date": "Date",
+      "time": "Time",
+      "total": "Total",
+      "confirmButton": "Confirm Booking"
+    },
+    "successStep": {
+      "title": "Booking Confirmed",
+      "description": "Your appointment has been successfully booked.",
+      "service": "Service",
+      "doctor": "Doctor",
+      "date": "Date",
+      "time": "Time",
+      "price": "Price",
+      "backToHome": "Back to Home"
+    },
+    "buttons": {
+      "next": "Next",
+      "back": "Back",
+      "confirm": "Confirm Booking"
+    }
   }
 }

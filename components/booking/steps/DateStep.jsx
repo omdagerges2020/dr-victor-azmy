@@ -2,6 +2,7 @@
 
 import { ArrowLeft, ArrowRight, Calendar } from "lucide-react";
 import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 
 
 function generateDates() {
@@ -25,6 +26,7 @@ function generateDates() {
 }
 
 export default function DateStep({ selected, onSelect, onNext, onBack }) {  
+  const { t } = useTranslation();
   const dates = useMemo(() => generateDates(), []);
   const isValid = selected?.full;  
 
@@ -33,7 +35,7 @@ export default function DateStep({ selected, onSelect, onNext, onBack }) {
       {/* Title */}
       <h3 className="flex items-center gap-2 text-lg font-semibold mb-6 text-[hsl(var(--booking-text))]">
         <Calendar color="#204dd5" className="w-5 h-5" />
-        Select a Date
+        {t("booking.dateStep.title")}
       </h3>
 
       {/* Grid */}
@@ -77,7 +79,7 @@ export default function DateStep({ selected, onSelect, onNext, onBack }) {
           className={`flex justify-between items-center gap-4 px-5 py-2 rounded-lg bg-[hsl(var(--btn-back-bg))] text-[hsl(var(--booking-text))] border border-[hsl(var(--booking-border))] transition-all duration-200 hover:bg-[hsl(var(--btn-back-hover))] hover:text-white hover:border-transparent`}
         >
           <ArrowLeft color="white" size={"16px"} />
-          Back
+          {t("booking.buttons.back")}
         </button>
 
         <button
@@ -90,7 +92,7 @@ export default function DateStep({ selected, onSelect, onNext, onBack }) {
                       : "bg-btn-disabled text-white opacity-90 cursor-not-allowed"
                   }`}
         >
-          Next
+          {t("booking.buttons.next")}
           <ArrowRight color="white" size={"16px"} />
         </button>
       </div>

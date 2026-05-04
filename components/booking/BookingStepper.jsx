@@ -1,7 +1,15 @@
 import { CircleCheckBig } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function BookingStepper({ step }) {
-  const steps = ["Service", "Doctor", "Date", "Time", "Confirm"];
+  const { t } = useTranslation();
+  const steps = [
+    t("booking.steps.service"),
+    t("booking.steps.doctor"),
+    t("booking.steps.date"),
+    t("booking.steps.time"),
+    t("booking.steps.confirm"),
+  ];
 
   return (
     <div className="flex items-center justify-center gap-2 flex-wrap">

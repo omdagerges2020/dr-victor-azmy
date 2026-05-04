@@ -2,22 +2,25 @@
 import React from "react";
 import { CheckCircle2 } from "lucide-react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const SuccessStep = ({ data }) => {
+  const { t } = useTranslation();
+
   const summaryItems = [
-    { label: "Service", value: data.service?.name },
-    { label: "Doctor", value: data.doctor?.name },
+    { label: t("booking.successStep.service"), value: data.service?.name },
+    { label: t("booking.successStep.doctor"), value: data.doctor?.name },
     {
-      label: "Date",
+      label: t("booking.successStep.date"),
       value: data.date?.full?.toLocaleDateString("en-US", {
         weekday: "long",
         day: "numeric",
         month: "long",
       }),
     },
-    { label: "Time", value: data.time?.label },
+    { label: t("booking.successStep.time"), value: data.time?.label },
     {
-      label: "Price",
+      label: t("booking.successStep.price"),
       value: `${data.service?.price || 0}`,
       isPrice: true,
     },
@@ -32,10 +35,10 @@ const SuccessStep = ({ data }) => {
 
       {/* Confirmation Header */}
       <h2 className="text-3xl font-bold text-[hsl(var(--text-primary))] mb-2 text-center">
-        Booking Confirmed
+        {t("booking.successStep.title")}
       </h2>
       <p className="text-[hsl(var(--success-description))] text-xl text-center mb-8 max-w-[28rem]">
-        Your appointment has been successfully booked.
+        {t("booking.successStep.description")}
       </p>
 
       {/* Summary Card */}
@@ -64,7 +67,7 @@ const SuccessStep = ({ data }) => {
         href="/"
         className="flex items-center gap-2 bg-gradient-to-r from-[#164DA0] to-[#2669B6] text-white px-5 py-3 rounded-full font-semibold hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-primary/20"
       >
-        Back to Home
+        {t("booking.successStep.backToHome")}
       </Link>
     </div>
   );

@@ -1,22 +1,54 @@
 import { ArrowRight, Stethoscope } from "lucide-react";
-
-const services = [
-  { id: 1, name: "Teeth Cleaning", price: "$120", duration: "45 min" },
-  { id: 2, name: "Teeth Whitening", price: "$350", duration: "60 min" },
-  { id: 3, name: "Dental Implants", price: "$2500", duration: "2-3 hours" },
-  { id: 4, name: "Orthodontics", price: "$4500", duration: "12-18 months" },
-  { id: 5, name: "Root Canal", price: "$800", duration: "90 min" },
-  { id: 6, name: "Dental Veneers", price: "$1200", duration: "2 visits" },
-];
+import { useTranslation } from "react-i18next";
 
 export default function ServiceStep({ selected, onSelect, onNext }) {
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      id: 1,
+      name: t("booking.serviceStep.teethCleaning"),
+      price: t("booking.serviceStep.teethCleaningPrice"),
+      duration: t("booking.serviceStep.teethCleaningDuration"),
+    },
+    {
+      id: 2,
+      name: t("booking.serviceStep.teethWhitening"),
+      price: t("booking.serviceStep.teethWhiteningPrice"),
+      duration: t("booking.serviceStep.teethWhiteningDuration"),
+    },
+    {
+      id: 3,
+      name: t("booking.serviceStep.dentalImplants"),
+      price: t("booking.serviceStep.dentalImplantsPrice"),
+      duration: t("booking.serviceStep.dentalImplantsDuration"),
+    },
+    {
+      id: 4,
+      name: t("booking.serviceStep.orthodontics"),
+      price: t("booking.serviceStep.orthodonticsPrice"),
+      duration: t("booking.serviceStep.orthodonticsDuration"),
+    },
+    {
+      id: 5,
+      name: t("booking.serviceStep.rootCanal"),
+      price: t("booking.serviceStep.rootCanalPrice"),
+      duration: t("booking.serviceStep.rootCanalDuration"),
+    },
+    {
+      id: 6,
+      name: t("booking.serviceStep.dentalVeneers"),
+      price: t("booking.serviceStep.dentalVeneersPrice"),
+      duration: t("booking.serviceStep.dentalVeneersDuration"),
+    },
+  ];
   return (
     <div className="w-full md:w-[90%] lg:w-[70%]">
       {/* service selec header */}
       <div className="flex items-center gap-2 mb-2">
         <Stethoscope color="#1924b3" />
         <h3 className="text-lg font-semibold  text-[hsl(var(--booking-text))]">
-          Select a Service
+          {t("booking.serviceStep.title")}
         </h3>
       </div>
 
@@ -59,7 +91,7 @@ export default function ServiceStep({ selected, onSelect, onNext }) {
               : "bg-btn-disabled text-white opacity-90 cursor-not-allowed"
           }`}
         >
-          Next 
+          {t("booking.buttons.next")}
           <ArrowRight color="white" size={"16px"}/>
         </button>
       </div>
