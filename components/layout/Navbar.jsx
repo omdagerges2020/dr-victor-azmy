@@ -64,13 +64,10 @@ export default function Navbar() {
         </div>
 
         {/* Right */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-0 lg:gap-3">
           <LanguageSwitcher />
 
           {/* Theme */}
-          {/* <button className="p-2 rounded-full hover:bg-gray-100">
-            <Moon size={20} />
-          </button> */}
           <ModeToggle />
 
           {/* Sign In */}

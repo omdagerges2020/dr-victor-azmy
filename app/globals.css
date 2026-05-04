@@ -10,6 +10,15 @@
 @layer base {
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-en);
+  }
+
+  html[lang="ar"] body {
+    font-family: var(--font-ar);
+  }
+
+  html[lang="en"] body {
+    font-family: var(--font-en);
   }
 }
 

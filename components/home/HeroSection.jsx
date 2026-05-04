@@ -50,7 +50,7 @@ export default async function HeroSection() {
             className="flex items-center gap-4 text-md bg-gradient-to-r from-[#164DA0] to-[#2669B6] text-white hover:from-[#1b5fc2] hover:to-[#2f7bd6] shadow-md hover:shadow-lg transition-all duration-300"
           >
             <Link href="/booking">
-              <T k="homepage.bookappointementbtn" />{" "}
+              <T k="homepage.bookappointementbtn" />
             </Link>
             <ArrowRight className="transition [html[dir='rtl']_&]:rotate-180" />
           </Button>

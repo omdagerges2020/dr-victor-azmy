@@ -14,7 +14,7 @@ export const footerData = {
   links: [
     { label: "Services", href: "/services" },
     { label: "Doctors", href: "/doctors" },
-    { label: "Book Appointment", href: "/book" },
+    { label: "Book Appointment", href: "/booking" },
     { label: "About Us", href: "/about" },
   ],
 
